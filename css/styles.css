@@ -435,10 +435,11 @@ img{
 }
 
 .list.filter {
-  margin-top: 0;
-  margin-bottom: 34px;
-  padding-left: 0;
   justify-content: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-left: 0;
+  
 }
 
 .item-filter + .item-filter {
@@ -570,4 +571,3 @@ img{
 .footer .social-link:focus {
   background-color: var(--accent-light-color);
 }
-
