@@ -24,7 +24,6 @@
     <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <title>Portfolio</title>
   </head>
-
   <body>
     <header class="header">
       <div class="container">
@@ -39,15 +38,27 @@
             <li class="item-header current">
               <a href="./portfolio.html" class="link">Портфолио</a>
             </li>
-            <li class="item-header"><a href="#" class="link">Контакты</a></li>
+            <li class="item-header">
+              <a href="#" class="link">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="list contact">
           <li class="item-header contact">
-            <a href="mailto:info@example.com" class="link">info@example.com</a>
+            <a href="mailto:info@example.com" class="link">
+              <svg class="link-icon" width="16" height="16">
+                <use href="./images/sprite.svg#envelope" />
+              </svg>
+              info@example.com</a
+            >
           </li>
           <li class="item-header contact">
-            <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+            <a href="tel:+380991111111" class="link">
+              <svg class="link-icon" width="16" height="16">
+                <use href="./images/sprite.svg#smartphone" />
+              </svg>
+              +38 099 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -82,11 +93,14 @@
           <ul class="list works">
             <li class="work-item">
               <a>
-                <img
-                  src="./images/works/img.jpg"
-                  alt="Изображение сайта"
-                  width="370"
-                />
+                <div class="work-thumb">
+                  <img
+                    src="./images/works/img.jpg"
+                    alt="Изображение сайта"
+                    width="370"
+                  />
+                  <p class="owerlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице. Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
                 <div class="work-description">
                   <h2 class="title title-work">Технокряк</h2>
                   <p class="type-work">Веб-сайт</p>
@@ -95,11 +109,14 @@
             </li>
             <li class="work-item">
               <a>
-                <img
-                  src="./images/works/img-1.jpg"
-                  alt="Изображение постера"
-                  width="370"
-                />
+                <div class="work-thumb">
+                  <img
+                    src="./images/works/img-1.jpg"
+                    alt="Изображение постера"
+                    width="370"
+                  />
+                  <p class="owerlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
                 <div class="work-description">
                   <h2 class="title title-work">
                     Постер New Orlean vs Golden Star
@@ -110,11 +127,14 @@
             </li>
             <li class="work-item">
               <a>
-                <img
-                  src="./images/works/img-2.jpg"
-                  alt="Изображение логотипа приложения"
-                  width="370"
-                />
+                <div class="work-thumb">
+                  <img
+                    src="./images/works/img-2.jpg"
+                    alt="Изображение логотипа приложения"
+                    width="370"
+                  />
+                  <p class="owerlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
                 <div class="work-description">
                   <h2 class="title title-work">Ресторан Seafood</h2>
                   <p class="type-work">Приложение</p>
@@ -123,11 +143,14 @@
             </li>
             <li class="work-item">
               <a>
-                <img
-                  src="./images/works/img-3.jpg"
-                  alt="Изображение проекта по маркетингу"
-                  width="370"
-                />
+                <div class="work-thumb">
+                  <img
+                    src="./images/works/img-3.jpg"
+                    alt="Изображение проекта по маркетингу"
+                    width="370"
+                  />
+                  <p class="owerlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
                 <div class="work-description">
                   <h2 class="title title-work">Проект Prime</h2>
                   <p class="type-work">Маркетинг</p>
@@ -136,11 +159,14 @@
             </li>
             <li class="work-item">
               <a>
-                <img
-                  src="./images/works/img-4.jpg"
-                  alt="Изображение логотипа приложения"
-                  width="370"
-                />
+                <div class="work-thumb">
+                  <img
+                    src="./images/works/img-4.jpg"
+                    alt="Изображение логотипа приложения"
+                    width="370"
+                  />
+                  <p class="owerlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
                 <div class="work-description">
                   <h2 class="title title-work">Проект Boxes</h2>
                   <p class="type-work">Приложение</p>
@@ -149,11 +175,14 @@
             </li>
             <li class="work-item">
               <a>
-                <img
-                  src="./images/works/img-5.jpg"
-                  alt="Изображение сайта"
-                  width="370"
-                />
+                <div class="work-thumb">
+                  <img
+                    src="./images/works/img-5.jpg"
+                    alt="Изображение сайта"
+                    width="370"
+                  />
+                  <p class="owerlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
                 <div class="work-description">
                   <h2 class="title title-work">Inspiration has no Borders</h2>
                   <p class="type-work">Веб-сайт</p>
@@ -162,11 +191,14 @@
             </li>
             <li class="work-item">
               <a>
-                <img
-                  src="./images/works/img-6.jpg"
-                  alt="Изображение идания"
-                  width="370"
-                />
+                <div class="work-thumb">
+                  <img
+                    src="./images/works/img-6.jpg"
+                    alt="Изображение идания"
+                    width="370"
+                  />
+                  <p class="owerlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
                 <div class="work-description">
                   <h2 class="title title-work">Издание Limited Edition</h2>
                   <p class="type-work">Дизайн</p>
@@ -175,11 +207,14 @@
             </li>
             <li class="work-item">
               <a>
-                <img
-                  src="./images/works/img-7.jpg"
-                  alt="Изображение проекта по маркетингу"
-                  width="370"
-                />
+                <div class="work-thumb">
+                  <img
+                    src="./images/works/img-7.jpg"
+                    alt="Изображение проекта по маркетингу"
+                    width="370"
+                  />
+                  <p class="owerlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
                 <div class="work-description">
                   <h2 class="title title-work">Проект LAB</h2>
                   <p class="type-work">Маркетинг</p>
@@ -188,11 +223,14 @@
             </li>
             <li class="work-item">
               <a>
-                <img
-                  src="./images/works/img-8.jpg"
-                  alt="логотипа приложения"
-                  width="370"
-                />
+                <div class="work-thumb">
+                  <img
+                    src="./images/works/img-8.jpg"
+                    alt="логотипа приложения"
+                    width="370"
+                  />
+                  <p class="owerlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                </div>
                 <div class="work-description">
                   <h2 class="title title-work">Growing Business</h2>
                   <p class="type-work">Приложение</p>
@@ -205,22 +243,79 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a href="./" class="link logo">
-          Web<span class="logo-invert-accent">Studio</span>
-        </a>
-        <address class="address">
-          <ul class="list contact">
-            <li class="item-footer">г. Киев, пр-т Леси Украинки, 26</li>
-            <li class="item-footer contact">
-              <a href="mailto:info@example.com" class="link"
-                >info@example.com</a
-              >
-            </li>
-            <li class="item-footer contact">
-              <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
-            </li>
-          </ul>
-        </address>
+        <ul class="list contacts-studio-items">
+          <li class="contact-item contacts">
+            <a href="./" class="link logo">
+              Web<span class="logo-invert-accent">Studio</span>
+            </a>
+            <address class="address">
+              <ul class="list contact">
+                <li class="item-footer">г. Киев, пр-т Леси Украинки, 26</li>
+                <li class="item-footer contact">
+                  <a href="mailto:info@example.com" class="link"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="item-footer contact">
+                  <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </li>
+          <li class="contact-item social-contacts">
+            <p class="uppertitle">Присоединяйтесь</p>
+            <ul class="list contact-social-items">
+              <li class="link contact-social-item" aria-label="instagram">
+                <a
+                  class="social-link"
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="icon-social" width="20" height="20">
+                    <use href="./images/sprite.svg#instagram">
+                  </svg>
+                </a>
+              </li>
+              <li class="link contact-social-item" aria-label="twitter">
+                <a
+                  class="social-link"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="icon-social" width="20" height="20">
+                    <use href="./images/sprite.svg#twitter">
+                  </svg>
+              </a>
+              </li>
+              <li class="link contact-social-item" aria-label="facebook">
+                <a
+                  class="social-link"
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="icon-social" width="20" height="20">
+                    <use href="./images/sprite.svg#facebook">
+                  </svg>
+                </a>
+              </li>
+              <li class="link contact-social-item" aria-label="linkedin">
+                <a
+                  class="social-link"
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg class="icon-social" width="20" height="20">
+                    <use href="./images/sprite.svg#linkedin">
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </footer>
   </body>
