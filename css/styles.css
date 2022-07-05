@@ -695,27 +695,72 @@ img{
 
 /* backdrop */
 
-@keyframes animate {
-  0% {
-    /* transform: scale(0.1); */
-    transform: translate(0, 0)
+/* @keyframes  fadeOut {
+  from {
+    transform: translate(-200%, -50%);
+    border-radius: 50%;
+    background: crimson;
   }
-
-  40% {
-    /* transform: scale(0.1); */
-    transform: translate(20%, 20%)
-  }
-
-  80%{
-     /* transform: scale(0.1); */
-     transform: translate(60%, 60%)
-  }
-
-  100% {
-    /* transform: scale(1); */
-    transform: translate(100%, 100%)
+  to {
+    transform: translate(-50%, -50%);
+    border-radius: 0;
+    background: slateblue;
   }
 }
+
+@keyframes fadeIn {
+  from {
+    transform: translate(-50%, -50%);
+    border-radius: 0;
+    background: slateblue;
+  }
+  to {
+    transform: translate(200%, -50%);
+    border-radius: 50%;
+    background: crimson;
+  }
+} */
+
+@keyframes fadeOut {
+  from {
+    transform: translate(-300%, -100%) scale(0.4);
+    opacity: 0.7;
+    border-radius: 70%;
+    background: var(--accent-dark-color);
+  }
+  80% {
+    transform: translate(-100%, -50%) scale(0.7);
+    opacity: 0.7;
+    border-radius: 30%;
+    background: var(--main-light-color);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    border-radius: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    border-radius: 0;
+  }
+  80% {
+    transform: translate(50%, -50%) scale(0.7);
+    opacity: 0.7;
+    border-radius: 30%;
+    background: var(--main-light-color);
+  }
+  to {
+    transform: translate(50%, -100%) scale(0.4);
+    opacity: 0.7;
+    border-radius: 70%;
+    background: var(--accent-dark-color);
+  }
+}
+
 
 .backdrop {
   position: fixed;
@@ -727,21 +772,18 @@ img{
 
   background: rgba(0, 0, 0, 0.2);
 
-  /* !!! */
-  transition: opacity 1500ms ease-in; 
+  opacity: 1;
+  transition: opacity 250ms var(--main-transition-timing-function);
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-
-  /* !!! */
-  /* transition: animate 1500ms linear;  */
 }
 
 .backdrop.is-hidden .modal{
-  /* !!! */
-  transform: animate 500ms lianer;
+  /* transform: translate(-50%, -50%); */
+  animation: fadeIn 350ms ease-in;
 }
 
 .modal {
@@ -758,19 +800,18 @@ img{
               0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
+  /* transform: translate(-50%, -50%) scale(1); */
+  /* transition: transform 500ms ease-in; */
   transform: translate(-50%, -50%);
+  animation: fadeOut 350ms ease-out;
+
 }
 
-.modal-controls {
-  display: flex;
-  justify-content: right;
+.modal-button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
 
-  padding-top: 8px;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.button-close {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -784,13 +825,14 @@ img{
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  transition: fill var(--main-transition-duration) var(--main-transition-timing-function);
+  transition: var(--main-transition-duration) var(--main-transition-timing-function);
   transition-property:  fill, border-color;
+
   cursor: pointer;
 }
 
-.button-close:hover,
-.button-close:focus {
+.modal-button-close:hover,
+.modal-button-close:focus {
   fill: var(--accent-light-color);
   border-color: var(--accent-light-alfa-color);
 }
