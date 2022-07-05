@@ -695,53 +695,8 @@ img{
 
 /* backdrop */
 
-/* @keyframes  fadeOut {
-  from {
-    transform: translate(-200%, -50%);
-    border-radius: 50%;
-    background: crimson;
-  }
-  to {
-    transform: translate(-50%, -50%);
-    border-radius: 0;
-    background: slateblue;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    transform: translate(-50%, -50%);
-    border-radius: 0;
-    background: slateblue;
-  }
-  to {
-    transform: translate(200%, -50%);
-    border-radius: 50%;
-    background: crimson;
-  }
-} */
-
+/* animation */
 @keyframes fadeOut {
-  from {
-    transform: translate(-300%, -100%) scale(0.4);
-    opacity: 0.7;
-    border-radius: 70%;
-    background: var(--accent-dark-color);
-  }
-  80% {
-    transform: translate(-100%, -50%) scale(0.7);
-    opacity: 0.7;
-    border-radius: 30%;
-    background: var(--main-light-color);
-  }
-  to {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-    border-radius: 0;
-  }
-}
-
-@keyframes fadeIn {
   from {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
@@ -761,6 +716,25 @@ img{
   }
 }
 
+@keyframes fadeIn {
+  from {
+    transform: translate(-300%, -100%) scale(0.4);
+    opacity: 0.7;
+    border-radius: 70%;
+    background: var(--accent-dark-color);
+  }
+  80% {
+    transform: translate(-100%, -50%) scale(0.7);
+    opacity: 0.7;
+    border-radius: 30%;
+    background: var(--main-light-color);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    border-radius: 0;
+  }
+}
 
 .backdrop {
   position: fixed;
@@ -783,7 +757,7 @@ img{
 
 .backdrop.is-hidden .modal{
   /* transform: translate(-50%, -50%); */
-  animation: fadeIn 350ms ease-in;
+  animation: fadeOut 350ms ease-in;
 }
 
 .modal {
@@ -803,7 +777,7 @@ img{
   /* transform: translate(-50%, -50%) scale(1); */
   /* transition: transform 500ms ease-in; */
   transform: translate(-50%, -50%);
-  animation: fadeOut 350ms ease-out;
+  animation: fadeIn 350ms ease-out;
 
 }
 
