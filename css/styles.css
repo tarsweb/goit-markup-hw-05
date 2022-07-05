@@ -778,7 +778,6 @@ img{
   /* transition: transform 500ms ease-in; */
   transform: translate(-50%, -50%);
   animation: fadeIn 350ms ease-out;
-
 }
 
 .modal-button-close {
