@@ -799,8 +799,8 @@ img{
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  transition: var(--main-transition-duration) var(--main-transition-timing-function);
-  transition-property:  fill, border-color;
+  transition: fill var(--main-transition-duration) var(--main-transition-timing-function);
+  /* transition-property:  fill , border-color; */
 
   cursor: pointer;
 }
@@ -808,5 +808,5 @@ img{
 .modal-button-close:hover,
 .modal-button-close:focus {
   fill: var(--accent-light-color);
-  border-color: var(--accent-light-alfa-color);
+  /* border-color: var(--accent-light-alfa-color); */
 }
