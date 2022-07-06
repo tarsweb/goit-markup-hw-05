@@ -702,12 +702,12 @@ img{
     opacity: 1;
     border-radius: 0;
   }
-  80% {
+  /* 0% {
     transform: translate(100%, -50%) scale(0.7);
     opacity: 0.7;
     border-radius: 30%;
     background: var(--main-light-color);
-  }
+  } */
   to {
     transform: translate(300%, -100%) scale(0.4);
     opacity: 0.7;
@@ -757,7 +757,7 @@ img{
 
 .backdrop.is-hidden .modal{
   /* transform: translate(-50%, -50%); */
-  animation: fadeOut 350ms ease-in;
+  animation: fadeOut 350ms ease-out;
 }
 
 .modal {
@@ -776,8 +776,9 @@ img{
 
   /* transform: translate(-50%, -50%) scale(1); */
   /* transition: transform 500ms ease-in; */
-  transform: translate(-50%, -50%);
-  animation: fadeIn 350ms ease-out;
+  /* transform: translate(-50%, -50%); */
+  animation: fadeIn 350ms ease-in;
+  animation-fill-mode: forwards;
 }
 
 .modal-button-close {
