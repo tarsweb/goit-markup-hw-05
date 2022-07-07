@@ -562,7 +562,7 @@ img{
   overflow: hidden;
 }
 
-.work-thumb .owerlay-text {
+.work-thumb .overlay {
   position: absolute;
   
   width: 100%;
@@ -583,8 +583,8 @@ img{
 
 }
 
-.list.works .work-item:hover .owerlay-text,
-.list.works .work-item:focus .owerlay-text {
+.list.works .work-item:hover .overlay,
+.list.works .work-item:focus .overlay {
   transform: translateY(-100%);
 }
 
@@ -701,7 +701,7 @@ img{
     opacity: 1;
     border-radius: 0;
   }
-  /* 0% {
+  /* 20% {
     transform: translate(100%, -50%) scale(0.7);
     opacity: 0.7;
     border-radius: 30%;
